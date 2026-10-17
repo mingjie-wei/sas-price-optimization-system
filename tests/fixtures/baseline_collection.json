@@ -1,0 +1,87 @@
+{
+  "horizon": 8,
+  "capacity": 2,
+  "episodes": 20,
+  "seed": 42,
+  "arrays": {
+    "observations": {
+      "shape": [
+        156,
+        2
+      ],
+      "dtype": "<i4",
+      "sha256": "6a41164471169132050fed7e85a8d8314dc8503cd52d7eb429610971d5bda8a9"
+    },
+    "actions": {
+      "shape": [
+        156
+      ],
+      "dtype": "<i8",
+      "sha256": "4c6c394371097d1b04d64685b4333bfd0c36307fcf723cc39dc5cdf6f3a976dc"
+    },
+    "rewards": {
+      "shape": [
+        156
+      ],
+      "dtype": "<f8",
+      "sha256": "902fec00c20ce60ec2a14a1e019d33411268d1da37aa0f71d72de7d12b1d4e26"
+    },
+    "next_observations": {
+      "shape": [
+        156,
+        2
+      ],
+      "dtype": "<i4",
+      "sha256": "429ce2ad908f4db0127a48a70ab1c879673d036702faa5e02ac7e44f909f0c9d"
+    },
+    "terminated": {
+      "shape": [
+        156
+      ],
+      "dtype": "|b1",
+      "sha256": "1dd7f0297e4e62a25fedf13caca8cb74721a7ed5d6408afd1bfa88ea0178b007"
+    },
+    "truncated": {
+      "shape": [
+        156
+      ],
+      "dtype": "|b1",
+      "sha256": "59bf9091f4cbbd2a8796bfe086a501c57226c42739dcf8ad323e7493ad51e38f"
+    },
+    "episode_id": {
+      "shape": [
+        156
+      ],
+      "dtype": "<i8",
+      "sha256": "54dabf3a573c993dde7ffca3ae906f4ba6883204787d9d8ffba01aee30847357"
+    },
+    "step": {
+      "shape": [
+        156
+      ],
+      "dtype": "<i8",
+      "sha256": "863ac95eecd00c05f26155f3fdc52f5912fb08a2f3b8c28a6115c997c6e3856c"
+    },
+    "action_probability": {
+      "shape": [
+        156
+      ],
+      "dtype": "<f8",
+      "sha256": "47358f99780ab435f8d303354176cba14da0e7455ded0cec83be162885e25f47"
+    },
+    "environment_seed": {
+      "shape": [
+        156
+      ],
+      "dtype": "<u4",
+      "sha256": "cdf4f13c602750f102d73f27a97b12977689f4cd7f9416a9d85a6f22d433b05d"
+    },
+    "action_seed": {
+      "shape": [
+        156
+      ],
+      "dtype": "<u4",
+      "sha256": "ea85b21ecd80c5faa64f2591f4bf5bea318e623773762220e156436002f19049"
+    }
+  }
+}

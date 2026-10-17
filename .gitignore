@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Generated learning-demo artifacts
+outputs/
+data/raw/
+data/simulated/
+.ipynb_checkpoints/
+
+# Local macOS metadata
+.DS_Store

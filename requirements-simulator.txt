@@ -1,0 +1,2 @@
+-r requirements-analysis.txt
+gymnasium==1.3.0

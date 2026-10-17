@@ -1,0 +1,2 @@
+-r requirements-simulator.txt
+torch==2.14.0

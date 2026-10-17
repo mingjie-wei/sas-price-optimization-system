@@ -1,0 +1,18 @@
+{
+  "created_on": "2026-10-16",
+  "dataset": "data/simulated/baseline",
+  "cql_run": "outputs/baseline/cql",
+  "config": "configs/environment.json",
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "updates": 20000,
+  "evaluation_seed": 12000000,
+  "action_seed": 14000000,
+  "evaluation_episodes": 1000,
+  "comparison": "Original baseline CQL checkpoints versus offline DQN trained on the same original dataset.",
+  "selection_rule": "No CQL retraining. No tuning or best-seed selection. Retain all final DQN checkpoints.",
+  "scope": "Fixed demand and original behavior mix; one original collection seed. No sales-pace data."
+}

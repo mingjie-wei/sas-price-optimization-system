@@ -1,0 +1,18 @@
+{
+  "room_type": "A",
+  "horizon": 330,
+  "capacity": 10,
+  "reference_price": 90,
+  "prices": [
+    55,
+    70,
+    90,
+    110,
+    125
+  ],
+  "reference_sale_probability": 0.03636363636363636,
+  "price_response_slope": 4,
+  "stay_nights": 1,
+  "cancellations": false,
+  "seasonality": false
+}

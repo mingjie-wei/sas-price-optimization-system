@@ -1,0 +1,21 @@
+{
+  "dataset": "Hotel booking demand datasets \u2014 H2 (city hotel)",
+  "authors": [
+    "Nuno Ant\u00f3nio",
+    "Ana de Almeida",
+    "Luis Nunes"
+  ],
+  "citation": "Ant\u00f3nio, N., de Almeida, A., & Nunes, L. (2019). Hotel booking demand datasets. Data in Brief, 22, 41\u201349. https://doi.org/10.1016/j.dib.2018.11.126",
+  "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6297060/",
+  "catalog_url": "https://support.sas.com/documentation/onlinedoc/viya/examples.htm",
+  "download_url": "https://support.sas.com/documentation/onlinedoc/viya/exampledatasets/h2.csv",
+  "license": "CC BY 4.0 (as listed in the SAS catalog)",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "downloaded_at_utc": "2026-09-24T20:44:53.111531+00:00",
+  "local_path": "data/raw/h2.csv",
+  "sha256": "ea4ef1bce2fc0d819e0abbbc1a475e789bca3a675be60cbc3313762aaff542ae",
+  "bytes": 14151632,
+  "expected_rows": 79330,
+  "expected_columns": 31,
+  "changes": "Raw CSV unchanged. Notebook strips padded strings, parses numeric/date fields, and derives dates and stay length. All filtering is reported."
+}
