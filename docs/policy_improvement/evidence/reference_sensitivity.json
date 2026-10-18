@@ -1,0 +1,134 @@
+[
+  {
+    "state": [
+      200,
+      2
+    ],
+    "contrast": "55",
+    "days_change": 0.0019450103864073753,
+    "rooms_change": -0.010957849211990833,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      200,
+      2
+    ],
+    "contrast": "125",
+    "days_change": 0.0006575621664524078,
+    "rooms_change": 0.0017331242561340332,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      200,
+      10
+    ],
+    "contrast": "55",
+    "days_change": 0.0007189074531197548,
+    "rooms_change": -0.009731746278703213,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      200,
+      10
+    ],
+    "contrast": "125",
+    "days_change": 0.0003651995211839676,
+    "rooms_change": 0.0020254869014024734,
+    "days_sign_changed": true,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      50,
+      10
+    ],
+    "contrast": "55",
+    "days_change": -0.00019676703959703445,
+    "rooms_change": -0.008816071785986423,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      50,
+      10
+    ],
+    "contrast": "125",
+    "days_change": 0.0004754103720188141,
+    "rooms_change": 0.001915276050567627,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      1,
+      1
+    ],
+    "contrast": "55",
+    "days_change": 0.0006787916645407677,
+    "rooms_change": -0.009691630490124226,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      1,
+      1
+    ],
+    "contrast": "125",
+    "days_change": 0.0007164999842643738,
+    "rooms_change": 0.0016741864383220673,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      128,
+      1
+    ],
+    "contrast": "55",
+    "days_change": 0.0016227113083004951,
+    "rooms_change": -0.010635550133883953,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      128,
+      1
+    ],
+    "contrast": "125",
+    "days_change": 0.0007255841046571732,
+    "rooms_change": 0.0016651023179292679,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      321,
+      10
+    ],
+    "contrast": "55",
+    "days_change": 0.0006989510729908943,
+    "rooms_change": -0.009711789898574352,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  },
+  {
+    "state": [
+      321,
+      10
+    ],
+    "contrast": "125",
+    "days_change": 0.00045642443001270294,
+    "rooms_change": 0.001934261992573738,
+    "days_sign_changed": false,
+    "rooms_sign_changed": false
+  }
+]

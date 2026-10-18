@@ -1,0 +1,219 @@
+[
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_C/seed_10/checkpoint_100000.pt",
+    "sha256": "94d8a89a92fb4bdc9f91188d4d875c5bb4d11ceb277de634c03a564fccb5ad9b",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_C/seed_11/checkpoint_100000.pt",
+    "sha256": "a2454337afb7bffcbf4030e382355fd46d22d60710e2e6547aa0efd039fe822f",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_C/seed_12/checkpoint_100000.pt",
+    "sha256": "f5f5e52c4c9664bd9ee6b19b7df52d808cd2179a3a4df8f7df67dbd18dbff53b",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_L/seed_10/checkpoint_100000.pt",
+    "sha256": "b6bc4bafc835f1cb542264123248ea5582d09dca197440048f07e50825ece331",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_L/seed_11/checkpoint_100000.pt",
+    "sha256": "29a5ec8f9b4d3ed9807983c15636fa6d6398504a383f0a0e4b358d455c2d14d3",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_L/seed_12/checkpoint_100000.pt",
+    "sha256": "9969a0d09d255e7cbc136b08c93117306e1d3cc9b0435f6a99a2d832df1788f2",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_10/checkpoint_100000.pt",
+    "sha256": "983e2fabd224c917ff53e62dafc59719ffcf48264dfdc268214d132af3b42c2c",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_10/checkpoint_20000.pt",
+    "sha256": "0df9970cf6065caeafa3e55c7a386a7e598ef2452caf3bd282ec1440b2313e9e",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_11/checkpoint_100000.pt",
+    "sha256": "16cca9df3a1a950e40aab308c4a118190575b7fe2dcfe6acc9525507e7b66806",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_11/checkpoint_20000.pt",
+    "sha256": "a53b087a4d809267260e8cf1ca3d10b421f7460d9cac9f6b15dc9d2546e32b11",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_12/checkpoint_100000.pt",
+    "sha256": "d6a92864d62498f004154a625e3018d6675b29393fd3b03b0b7bf073976f7813",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/CONF_U/seed_12/checkpoint_20000.pt",
+    "sha256": "5b6de6aa2251d1ae72c7a24245bc946be20358849aacc6b9686a0c98c4d05376",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_R/seed_0/checkpoint_100000.pt",
+    "sha256": "3c4d3aaab5727b927a3d86d1973495c9d084014225fa0a14d7bed308f66a2a84",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_R/seed_0/checkpoint_20000.pt",
+    "sha256": "189fb036e54241416e6cf509af7e3d611e0687250cff6ae8b4999bbd80a70ef7",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_R/seed_1/checkpoint_100000.pt",
+    "sha256": "26385a34a99b04d1e4a2003883ab7b9257c436ee5818f71872654ee8bd52807d",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_R/seed_1/checkpoint_20000.pt",
+    "sha256": "e63054441eb75fc03d6285e6753c0a954c8967206a1be5db276084293de22170",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_U/seed_0/checkpoint_100000.pt",
+    "sha256": "5498912c13352e8af4129cac6b89da720a35b8fe608c9170aa74c0b9a5e6c47e",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_U/seed_0/checkpoint_20000.pt",
+    "sha256": "21fd374a519ff5063f34ae6afa3af2230048d7a913557957f2cf52487c820796",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_U/seed_1/checkpoint_100000.pt",
+    "sha256": "1978c83300473373c4b3c470e7680c156a3ccf768ef974eacaf01b80e2de25d3",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E1_U/seed_1/checkpoint_20000.pt",
+    "sha256": "8cef4645dc52f7786c524ee86270c77dc2e3ad5fef2c094a46be5c7c9e2b2ff9",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E2_balanced/seed_0/checkpoint_100000.pt",
+    "sha256": "135f6d78b8691d83a93cea47b01b171220d76dd1e713eb7e4c40c2050d0535df",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E2_balanced/seed_1/checkpoint_100000.pt",
+    "sha256": "22fa9275980fc8cce8a12a03e5e4053d0b574acdbf0e94bdaa1831ac010e83e4",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E2_familiar/seed_0/checkpoint_100000.pt",
+    "sha256": "1303afd8b17df5cc98cfd0f1aa16626221b21704d12ba9d61b934b76299a18ad",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E2_familiar/seed_1/checkpoint_100000.pt",
+    "sha256": "84a78e9ffd52141f70a267a8841e9ac6c5c8db5ff7fd449a62c3531a044c6c74",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E3_method/seed_0/checkpoint_100000.pt",
+    "sha256": "2568df41ca1a9d0e60bb5c1954923711cfbe403aeea39462520d99119b3a7f56",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "checkpoint and policy",
+    "path": "outputs/policy_improvement/training/models/E3_method/seed_1/checkpoint_100000.pt",
+    "sha256": "611943fa5bd174f3408a83fa1b613ab05f770028c922fcfb418379e7758ecd86",
+    "status": "available and independently verified",
+    "verification": "direct score, argmax, exact revenue, regret identity"
+  },
+  {
+    "role": "follow-up protocol",
+    "path": "outputs/policy_improvement/training/protocol.json",
+    "sha256": "2e74992547d63c1748245868dff8e2be9cf133582bacf9e7770c9d72002a418b",
+    "status": "available and verified",
+    "verification": "identity recorded; associated models independently checked"
+  },
+  {
+    "role": "frozen candidate",
+    "path": "configs/policy_improvement/candidate.json",
+    "sha256": "443890a0a60ff3a6d6fc0ace89c83acf3dbbd18d8fa457d292fbadb27fd19f55",
+    "status": "available and verified",
+    "verification": "identity recorded; associated models independently checked"
+  },
+  {
+    "role": "fixed references",
+    "path": "outputs/policy_improvement/coverage/references.json",
+    "sha256": "85f6dbcfdeaaf84a5efb7f1734409194d570d9b5298f0e0c14cd7f3786ea182c",
+    "status": "available and verified",
+    "verification": "identity recorded; associated models independently checked"
+  },
+  {
+    "role": "confirmation data",
+    "path": "data/simulated/policy_improvement/probes/confirmation_balanced/manifest.json",
+    "sha256": "a0b1e845f4b138f1ae4fc289bcb4496f28b6ccebf77e16c9f417ac0fcbb8f632",
+    "status": "available and verified",
+    "verification": "identity recorded; associated models independently checked"
+  },
+  {
+    "role": "original data",
+    "path": "data/simulated/baseline/manifest.json",
+    "sha256": "f437c029a9cba0e51431423e00acb8f9394c2fa8db2cb3a06068f40d5146751e",
+    "status": "available and verified",
+    "verification": "identity recorded; associated models independently checked"
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "means": {
+    "Frozen candidate": 864.4690345389059,
+    "Linear-time control": 866.010359284444,
+    "Ordinary 100k": 851.0034472642624,
+    "Ordinary 20k": 851.0030696048719
+  },
+  "oracle": 888.4103406704032,
+  "planner": 888.3737610118486,
+  "candidate_gain": 13.465964934033991,
+  "relative_gain_percent": 1.5823638497903838,
+  "gap_recovery_percent": 35.998255286903635,
+  "checkpoint_count": 26,
+  "trajectory_count": 19,
+  "illustration_seed": 10,
+  "illustration_rule": "first reserved confirmation seed; all three retained in tables and seed 12 deadline failure shown",
+  "last_day_revenues": {
+    "55": 8.34166194378153,
+    "70": 5.885084956638987,
+    "90": 3.2727272727272725,
+    "110": 1.68043414436432,
+    "125": 0.9877555976476768
+  },
+  "original_counts": [
+    {
+      "action": 0,
+      "trials": 32492,
+      "sales": 4931,
+      "no_sales": 27561,
+      "mean_scaled_reward": 0.09274248703954478,
+      "sale_probability": 0.1517604333374369,
+      "wilson_low": 0.14790034153718032,
+      "wilson_high": 0.1557028616492853
+    },
+    {
+      "action": 1,
+      "trials": 48749,
+      "sales": 4103,
+      "no_sales": 44646,
+      "mean_scaled_reward": 0.06546231147761435,
+      "sale_probability": 0.08416582904264702,
+      "wilson_low": 0.0817338574398539,
+      "wilson_high": 0.08666333399688075
+    },
+    {
+      "action": 2,
+      "trials": 162057,
+      "sales": 5820,
+      "no_sales": 156237,
+      "mean_scaled_reward": 0.03591328976841482,
+      "sale_probability": 0.03591328976841482,
+      "wilson_low": 0.03501827725745474,
+      "wilson_high": 0.03683030433105407
+    },
+    {
+      "action": 3,
+      "trials": 48427,
+      "sales": 759,
+      "no_sales": 47668,
+      "mean_scaled_reward": 0.019155980479209255,
+      "sale_probability": 0.015673074937534847,
+      "wilson_low": 0.014604604636703539,
+      "wilson_high": 0.016818380174694003
+    },
+    {
+      "action": 4,
+      "trials": 32535,
+      "sales": 274,
+      "no_sales": 32261,
+      "mean_scaled_reward": 0.011696805150009393,
+      "sale_probability": 0.008421699708006762,
+      "wilson_low": 0.007485112246347771,
+      "wilson_high": 0.009474360582580471
+    }
+  ],
+  "max_reconstruction_error": 0.0,
+  "illustrative_cases": [
+    {
+      "case": "A \u2014 More time, many rooms: 200 days, 10 rooms",
+      "days": 200,
+      "rooms": 10,
+      "simulator_optimal_price": 90,
+      "ordinary_20k_all_seeds": 90,
+      "candidate_seed_10": 90,
+      "candidate_seed_11": 90,
+      "candidate_seed_12": 90
+    },
+    {
+      "case": "B \u2014 More time, few rooms: 200 days, 2 rooms",
+      "days": 200,
+      "rooms": 2,
+      "simulator_optimal_price": 125,
+      "ordinary_20k_all_seeds": 90,
+      "candidate_seed_10": 90,
+      "candidate_seed_11": 90,
+      "candidate_seed_12": 90
+    },
+    {
+      "case": "C \u2014 Less time, many rooms: 50 days, 10 rooms",
+      "days": 50,
+      "rooms": 10,
+      "simulator_optimal_price": 55,
+      "ordinary_20k_all_seeds": 90,
+      "candidate_seed_10": 90,
+      "candidate_seed_11": 55,
+      "candidate_seed_12": 70
+    },
+    {
+      "case": "D \u2014 Last day, one room: 1 day, 1 room",
+      "days": 1,
+      "rooms": 1,
+      "simulator_optimal_price": 55,
+      "ordinary_20k_all_seeds": 90,
+      "candidate_seed_10": 55,
+      "candidate_seed_11": 55,
+      "candidate_seed_12": 90
+    }
+  ],
+  "regional_comparison": [
+    {
+      "region": "Final 30 days",
+      "ordinary_20k": 17.434874045448847,
+      "candidate_mean": 4.702759204637677,
+      "reduction_percent": 73.0267096144278
+    },
+    {
+      "region": "Earlier days",
+      "ordinary_20k": 19.972397020082354,
+      "candidate_mean": 18.826944699849342,
+      "reduction_percent": 5.7351769999427376
+    }
+  ]
+}
