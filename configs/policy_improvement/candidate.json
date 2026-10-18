@@ -1,0 +1,28 @@
+{
+  "dataset": "balanced",
+  "updates": 100000,
+  "replay_rule": "late_32_224",
+  "alpha": 0.1,
+  "preprocessing": "log_time",
+  "confirm_component_control": true,
+  "development_seeds": [
+    0,
+    1
+  ],
+  "development_revenues": [
+    861.3597032832313,
+    859.9403799380306
+  ],
+  "development_gap_recovery": 0.2578902906031087,
+  "confirmation_seeds": [
+    10,
+    11,
+    12
+  ],
+  "collection_seed": 62000000,
+  "outcome_seed": 62000001,
+  "checkpoint_rule": "fixed 100000 endpoint",
+  "success_rule": "mean gap recovery >= 0.10 against uniform 20k and positive paired gain in all three seeds",
+  "component_control": "same fresh balanced dataset, same replay and budget, linear time input",
+  "confirmation_source_sha256": "31e9c0d32e516e812f7e8c131776381bcc279cbf9b69a92f0cf84d9b2bb044a4"
+}

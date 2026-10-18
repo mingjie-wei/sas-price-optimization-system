@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-18T15:05:28.037023",
+  "path_mapping": {
+    "configs/xai_project1/experiment.json": "configs/policy_improvement/coverage.json",
+    "configs/learning_followup/protocol.json": "configs/policy_improvement/training.json",
+    "configs/learning_followup/candidate.json": "configs/policy_improvement/candidate.json",
+    "outputs/xai_project1/coverage_v1": "outputs/policy_improvement/coverage",
+    "outputs/learning_followup/learning_v1": "outputs/policy_improvement/training",
+    "data/simulated/xai_project1/coverage_v1": "data/simulated/policy_improvement/coverage",
+    "data/simulated/learning_followup/learning_v1": "data/simulated/policy_improvement/probes"
+  },
+  "source_relocations": {
+    "hotel_pricing/xai_experiment.py": {
+      "original_sha256": "22332aeb5807337744b5e858796a452b46dc836f02daa006cf6bdfa9b8d5453c",
+      "relocated_sha256": "2e2a1e374cfc0e9c8ee54d33ff93e2573fb522dd099d8572b25732cfdc097123"
+    },
+    "scripts/policy_improvement/learning.py": {
+      "original_sha256": "ef4375e39bd1bbd49c024b4848395fa9010e72e4e470966e42d90999ab527ce4",
+      "relocated_sha256": "69ed15e5e33e878b79259b0f867acecd3e235ef050ff9e4e291b0345951a1f1e",
+      "historical_path": "scripts/followup_learning.py"
+    },
+    "scripts/policy_improvement/experiments.py": {
+      "original_sha256": "3f90b2848859ef89e7b284bffaba2bfbca8b9ea4949db763f0a39397fa1abcdc",
+      "relocated_sha256": "9c5707a4532edb531e81917fb58fcac34ecd59242dfa66d48feb0d011eeba07d",
+      "historical_path": "scripts/run_learning_followup.py"
+    },
+    "scripts/policy_improvement/confirmation.py": {
+      "original_sha256": "31e9c0d32e516e812f7e8c131776381bcc279cbf9b69a92f0cf84d9b2bb044a4",
+      "relocated_sha256": "e1f1b8ed820369b9d7234ca7218b70231b533a635cedccd946a89ec1e9971258",
+      "historical_path": "scripts/confirm_learning_followup.py"
+    }
+  },
+  "note": "Path mappings and exact source hashes preserve compatibility with frozen experiment protocols after repository reorganization. Later source edits retain their actual hashes and fail frozen-source checks."
+}
