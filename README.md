@@ -3,57 +3,85 @@
 ## Repository structure
 
 ```text
-├── hotel_pricing/          # Simulator, learning, and evaluation
-├── configs/                # Environment and experiment settings
+├── hotel_pricing/             # Simulator, learning, evaluation, and explanations
+├── configs/                   # Environment, baseline, and policy-improvement settings
 ├── notebooks/
-│   ├── baseline/           # Booking analysis, simulation, and initial learning
-│   └── baseline_analysis/  # Policy diagnosis and algorithm comparison
-├── data/                   # Source metadata, bookings, and simulated episodes
-├── outputs/                # Saved models, results, tables, and figures
-├── docs/                   # Assumptions, experiment details, and provenance
-├── scripts/                # Data download and notebook execution
-├── tests/                  # Implementation and regression checks
-└── requirements-*.txt      # Python dependencies
+│   ├── baseline/              # Booking analysis, simulation, and initial learning
+│   ├── baseline_analysis/     # Policy diagnosis and CQL–DQN comparison
+│   └── policy_improvement/    # Policy audit and controlled improvement
+├── data/                      # Source metadata, bookings, and simulated experience
+├── docs/
+│   ├── environment_spec.md    # Observations and simulator assumptions
+│   ├── baseline_comparison.md # Baseline controls and findings
+│   ├── policy_improvement/    # Report, poster, decision log, figures, and evidence
+│   └── provenance/            # Artifact identities and migration records
+├── outputs/
+│   ├── analysis/             # Booking-analysis tables and figures
+│   ├── simulator/            # Simulator figures
+│   ├── baseline/             # Baseline models and comparison results
+│   └── policy_improvement/   # Coverage/training results and report exports
+├── scripts/                   # Shared data and notebook utilities
+│   └── policy_improvement/    # Study runners, evidence, and report builders
+├── tests/                     # Shared infrastructure checks
+│   ├── baseline/              # Simulator, learning, and comparison checks
+│   └── policy_improvement/    # Explanation and improvement checks
+└── requirements-*.txt         # Python dependencies
 ```
 
 ## Pricing is learned from experience.
 
-This capstone with SAS investigates how pricing decisions can be learned directly from experience, rather than relying on a separate demand forecast before selecting prices. The central question is whether a policy can use the outcomes of past decisions to choose prices as time and available inventory change.
+This capstone with SAS investigates whether pricing decisions can be learned directly from past decisions and outcomes, rather than forecasting demand before selecting prices. The central question is how a policy should adapt as time and available inventory change.
 
-While partner data undergoes confidentiality checks and anonymization, the project uses simulation to develop the learning workflow and investigate its limitations.
+While partner data undergoes confidentiality checks and anonymization, simulation provides a controlled setting for developing the workflow and investigating its limitations.
 
 ## Booking data informs the setting.
 
-Public hotel reservations provide a starting point for understanding lead times, room types, rates, cancellations, and stays. These patterns help define a manageable pricing setting.
-
-However, reservations do not capture every offered price, available inventory at each decision, or shoppers who did not book. The data therefore informs the simulator rather than serving as a complete history for learning pricing decisions.
+Public hotel reservations provide evidence about lead times, rates, cancellations, and stays. They do not reveal every offered price, rejected offer, or inventory level. The data therefore informs the simulator rather than supplying a complete history for learning pricing decisions.
 
 The [booking analysis](notebooks/baseline/01_hotel_booking_patterns.ipynb) establishes this groundwork. The [environment specification](docs/environment_spec.md) separates observed patterns from modeling assumptions.
 
 ## Simulation makes decisions testable.
 
-The baseline represents a single arrival date, room type, and stay night. A policy observes time and rooms remaining, chooses from a fixed price menu, and receives revenue when a room sells. The simulator records both sales and no-sale days.
+The simulated hotel starts with 330 days and 10 rooms for one arrival date and one night. Each day, a policy chooses a price from the time and rooms remaining. At most one room sells; unsold inventory carries forward. Both sales and no-sales are recorded.
 
-A deliberately small environment allows the best achievable policy to be calculated exactly. The learner uses recorded experience, while the known demand mechanism supports evaluation. This provides a controlled way to assess pricing decisions before introducing richer demand patterns.
-
-The [simulator notebook](notebooks/baseline/02_simulator_and_offline_data.ipynb) describes the environment and collection of offline training data.
+This small environment allows the best achievable policy to be calculated exactly. The [simulator notebook](notebooks/baseline/02_simulator_and_offline_data.ipynb) describes the assumptions and collection of offline training data.
 
 ## The baseline reveals limited adaptation.
 
-Conservative Q-Learning (CQL) learns from a fixed dataset of simulated episodes. Its decisions are compared with the data-collection policy, fixed prices, and the simulator-informed optimum.
+Conservative Q-Learning (CQL) learns price scores from a fixed dataset. The learned policy improves on the data-collection policy but mostly behaves like a fixed-price rule. The [CQL experiment](notebooks/baseline/03_offline_cql.ipynb) and [end-to-end summary](notebooks/baseline/04_end_to_end_demo.ipynb) establish the initial workflow.
 
-The learned policy improves on the collection policy but behaves largely like a fixed-price rule. This establishes a working pipeline while motivating a closer examination of why the policy does not adapt effectively to time and inventory.
+The [policy-gap diagnosis](notebooks/baseline_analysis/01_policy_gap.ipynb) locates weak decisions and compares them with training support. The [CQL–DQN comparison](notebooks/baseline_analysis/02_cql_vs_offline_dqn.ipynb) tests whether removing CQL's conservative penalty helps under matched settings. It does not support that change as a remedy. The [experiment record](docs/baseline_comparison.md) retains the controls and findings.
 
-The [CQL notebook](notebooks/baseline/03_offline_cql.ipynb) presents the experiment, and the [end-to-end summary](notebooks/baseline/04_end_to_end_demo.ipynb) connects the initial workflow.
+## Explanations guide controlled improvement.
 
-## Diagnosis guides the investigation.
+Policy maps, score-response curves, and Shapley explanations reveal limited adaptation across time and inventory. The [policy audit](notebooks/policy_improvement/01_policy_audit.ipynb) examines these weaknesses and the first unsuccessful attempt to add complete selling periods.
 
-The analysis preserves the original data and models and locates the decisions responsible for the remaining revenue gap. Comparing these losses with training support identifies potentially important gaps in experience without assuming that limited coverage caused the errors.
+The [learning-improvement notebook](notebooks/policy_improvement/02_learning_improvement.ipynb) then checks learning mechanics, tests replay and targeted observations, and confirms a fixed configuration on fresh data and training seeds. The revised model improves full-period revenue, with most improvement near arrival. Earlier scarcity decisions remain weak.
 
-A controlled comparison then tests whether removing CQL's conservative penalty improves performance. Offline DQN uses the same data, architecture, training budget, and seeds. The comparison does not support removing the penalty as a remedy in this setting.
+The matched original-time-scale comparison performs better on average, so the gain cannot be attributed specifically to logarithmic time encoding. A separate planner fitted to the original data shows that useful pooled information already exists under the simulator's structural assumptions.
 
-The [policy-gap diagnosis](notebooks/baseline_analysis/01_policy_gap.ipynb) and [CQL–DQN comparison](notebooks/baseline_analysis/02_cql_vs_offline_dqn.ipynb) document these investigations. The [experiment record](docs/baseline_comparison.md) retains the detailed controls and findings.
+## The report and poster record the completed study.
 
-## Conclusions depend on the simulated world.
+The [research report](docs/policy_improvement/report.md) connects the question, experiments, explanations, and limitations. The [poster](docs/policy_improvement/poster.pdf) presents the main findings. The [decision log](docs/policy_improvement/decision_log.md) records choices made between experimental stages.
 
-The experiments provide evidence about learning under explicit demand assumptions. They do not establish performance on partner data or demonstrate real-world revenue gains. As that data becomes available, its contents will determine which assumptions can be revisited and which parts of the workflow can carry over.
+The supporting [metrics](docs/policy_improvement/evidence/final_metrics.csv), [claim ledger](docs/policy_improvement/evidence/claim_evidence.csv), [case comparisons](docs/policy_improvement/evidence/confirmation_cases.csv), and [regional comparison](docs/policy_improvement/evidence/regional_comparison.csv) preserve detailed results. The [summary](docs/policy_improvement/evidence/final_summary.json) and [evidence inventory](docs/policy_improvement/evidence/evidence_inventory.json) identify the shared numbers and models.
+
+The findings depend on an assumed demand law and simplified inventory dynamics. They do not establish real-hotel revenue gains or a causal benefit from using explanations. Partner data will determine which assumptions can be revisited.
+
+## Saved evidence supports reproduction.
+
+The notebooks include executed outputs and can be read without rerunning experiments.
+
+To rebuild the report and its evidence from saved results, use Python 3.12 with `requirements-cql.txt` installed in the project's `.venv`. Run this command from the repository root:
+
+```sh
+.venv/bin/python -m scripts.policy_improvement.report
+```
+
+This command verifies saved results and refreshes the report without retraining. Add `--refresh-diagnostics` to also rebuild experiment summaries.
+
+Edit the notebooks directly; `scripts/run_notebook.py` executes them and saves their outputs in place.
+
+For new experiments, run `.venv/bin/python -m scripts.policy_improvement.experiments --help`; its `confirmation` stage uses fresh confirmation data and reserved seeds. Experiment settings are in `configs/policy_improvement/`; the [decision log](docs/policy_improvement/decision_log.md) explains the experimental sequence.
+
+Rebuilding requires local datasets and trained models under `data/` and `outputs/`. These assets are excluded from Git and are not included in a source checkout.
